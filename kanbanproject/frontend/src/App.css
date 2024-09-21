@@ -1,0 +1,197 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+input{
+  
+  width: 100%;
+  color: rgb(36, 35, 42);
+  font-size: 16px;
+  line-height: 20px;
+  min-height: 28px;
+  border-radius: 4px;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  box-shadow: rgb(0 0 0 / 12%) 0px 1px 3px, rgb(0 0 0 / 24%) 0px 1px 2px;
+  background: rgb(251, 251, 251);
+  transition: all 0.1s ease 0s;
+  margin-right: 4px;
+
+}
+
+input :focus{
+  border: 2px solid rgb(124, 138, 255);
+}
+
+button{
+  outline: 0;
+  border: none;
+  box-shadow: none;
+  cursor: pointer;
+  padding: 9px 22px;
+  font-size: 22px;
+  height: 50px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  line-height: normal;
+  background: linear-gradient(90deg,#5522fa 0,#0074e4 100%);
+  border-radius: 50px;
+  transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
+}
+
+button:hover{
+  box-shadow: 0 0 0 0.15rem #5ceace;
+}
+
+select {
+  background-color: rgb(255, 255, 255);
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 1.5em;
+  color: black;
+  width: 250px;
+  min-width: 200px;
+  margin: 0;      
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  margin-right: 4px;
+}
+
+select.classic {
+  background-image:
+    linear-gradient(45deg, transparent 50%, blue 50%),
+    linear-gradient(135deg, blue 50%, transparent 50%),
+    linear-gradient(to right, skyblue, skyblue);
+  background-position:
+    calc(100% - 20px) calc(1em + 2px),
+    calc(100% - 15px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image:
+    linear-gradient(45deg, white 50%, transparent 50%),
+    linear-gradient(135deg, transparent 50%, white 50%),
+    linear-gradient(to right, gray, gray);
+  background-position:
+    calc(100% - 15px) 1em,
+    calc(100% - 20px) 1em,
+    100% 0;
+  background-size:
+    5px 5px,
+    5px 5px,
+    2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
+
+.app-container{
+  height: 20vw;
+}
+
+.app-input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90vh;
+}
+
+.app-board-container {
+  height: 100%; 
+}
+
+.app-board-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; 
+  flex-wrap: wrap;
+  max-width: calc(4 * 300px);
+  max-height: calc(4 * 200px);
+  height: 100%; 
+  overflow: hidden; 
+  width: 100vw;
+}
+
+.app-board-content > div {
+  flex: 0 0 200px;
+  height: auto;
+  min-height: 100px;
+  box-sizing: border-box;
+  margin: 5px;
+  background-color: #ffffff;
+}
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+@media screen and (max-width: 700px) {
+  .app-board{
+    margin-top: 10vh;
+    width: 100vw;
+  }
+
+  .app-board-content{
+    justify-content: center;
+    min-width: 100vw;
+  }
+  
+}

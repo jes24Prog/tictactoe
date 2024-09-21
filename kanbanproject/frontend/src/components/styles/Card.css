@@ -1,0 +1,15 @@
+.card {
+    user-select: none;
+    padding: 16px;
+    margin: 0 0 8px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.card:hover {
+    background: #f0f0f0;
+}
+
+

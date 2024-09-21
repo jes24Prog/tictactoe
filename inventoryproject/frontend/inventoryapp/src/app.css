@@ -1,0 +1,11 @@
+.app-content{
+  margin-left: 300px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .app-content{
+    margin-left: 0;
+  }
+}
